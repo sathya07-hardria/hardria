@@ -9,44 +9,42 @@
 </head>
 <body>
 
-  <!-- Header -->
-  <header>
-    <h1>Super Shopping Mall 💙</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="offers.html">Offers</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+<header>
+  <h1>Super Shopping Mall 💙</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="offers.html">Offers</a></li>
+      <li><a href="food.html">Food</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="content">
-      <h2>Welcome to Super Shopping Mall 🛍️</h2>
-      <p>Find the best shopping offers, food courts, electronics, and fashion all in one place!</p>
-      <a href="offers.html" class="btn">View Offers</a>
-
-      <!-- Assistant logo inside page -->
-      <div class="assistant-container">
-        <img src="assistant-logo.png" alt="Assistant" class="assistant-logo" onclick="toggleChatBox()" />
-      </div>
-    </div>
-  </section>
-
-  <!-- Chat box -->
-  <div class="chat-box" id="chatBox">
-    <div class="chat-header">Mall Assistant 💙</div>
-    <div class="chat-body" id="chatBody">
-      <p><strong>Bot:</strong> Hello! Type "offers" or "timings" to get started.</p>
-    </div>
-    <div class="chat-input">
-      <input type="text" id="userInput" placeholder="Type your message..." />
-      <button onclick="sendMessage()">Send</button>
-    </div>
+<section class="hero">
+  <div class="content">
+    <h2>Welcome to Super Shopping Mall 🛍️</h2>
+    <p>Discover the best shopping offers, fashion, food, and electronics all in one place!</p>
   </div>
+</section>
+
+<!-- Small Chatbot Logo -->
+<div class="assistant-container">
+  <img src="assistant-logo.png" alt="Assistant" class="assistant-logo" onclick="toggleChatBox()" />
+</div>
+
+<!-- Chat Box -->
+<div class="chat-box" id="chatBox">
+  <div class="chat-header">Mall Assistant 💙</div>
+  <div class="chat-body" id="chatBody">
+    <p><strong>Bot:</strong> Hello! Type "offers", "food", or "timings" to get started.</p>
+  </div>
+  <div class="chat-input">
+    <input type="text" id="userInput" placeholder="Type your message..." />
+    <button onclick="sendMessage()">Send</button>
+  </div>
+</div>
 
 </body>
 </html>
