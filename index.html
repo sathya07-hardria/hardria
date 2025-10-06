@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Super Shopping Mall</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="mall-chat.js" defer></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Super Shopping Mall 💙</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="offers.html">Offers</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="content">
+      <h2>Welcome to Super Shopping Mall 🛍️</h2>
+      <p>Find the best shopping offers, food courts, electronics, and fashion all in one place!</p>
+      <a href="offers.html" class="btn">View Offers</a>
+    </div>
+  </section>
+
+  <!-- Chatbot -->
+  <div class="chatbot-logo" onclick="toggleChat()">💬</div>
+  <div class="chat-box" id="chatBox">
+    <div class="chat-header">Mall Assistant 💙</div>
+    <div class="chat-body" id="chatBody">
+      <p><strong>Bot:</strong> Hello! Type "offers" or "timings" to get started.</p>
+    </div>
+    <div class="chat-input">
+      <input type="text" id="userInput" placeholder="Type your message..." />
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+
+</body>
+</html>
