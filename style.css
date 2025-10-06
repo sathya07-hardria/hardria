@@ -45,19 +45,27 @@ nav ul li a:hover { text-decoration: underline; }
 }
 .btn:hover { background: #005fa3; }
 
-/* Chatbot */
-.chatbot-logo {
-  position: fixed;
-  bottom: 25px;
-  right: 25px;
-  background: #0078d7;
-  color: white;
-  font-size: 22px;
-  border-radius: 50%;
-  width: 55px;
-  height: 55px;
+/* Assistant (only for Home Page) */
+.assistant-container {
+  margin-top: 20px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+}
+
+.assistant-logo {
+  width: 60px;
+  height: 60px;
   cursor: pointer;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 6px rgba(0,0,0,0.3);
+}
+
+.chat-box {
+  position: fixed;
+  bottom: 90px;
+  right: 25px;
+  width: 300px;
+  background: white;
+  border-radius: 15px;
   box-shadow: 0 0
