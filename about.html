@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About - Super Shopping Mall</title>
+  <title>Super Shopping Mall</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="mall-chat.js" defer></script>
 </head>
 <body>
 
@@ -21,11 +22,29 @@
   </nav>
 </header>
 
-<section class="about-section">
-  <h2>About Super Shopping Mall 🛍️</h2>
-  <p>Your one-stop destination for shopping, dining, and entertainment. Enjoy a comfortable and safe shopping experience with a variety of brands and sections.</p>
+<section class="hero">
+  <div class="content">
+    <h2>Welcome to Super Shopping Mall 🛍️</h2>
+    <p>Discover the best shopping offers, fashion, food, and electronics all in one place!</p>
+  </div>
 </section>
+
+<!-- Chatbot Logo in Bottom Right Corner -->
+<div class="assistant-logo-corner" onclick="toggleChatBox()">
+  <img src="assistant-logo.png" alt="Assistant" />
+</div>
+
+<!-- Chat Box -->
+<div class="chat-box" id="chatBox">
+  <div class="chat-header">Mall Assistant 💙</div>
+  <div class="chat-body" id="chatBody">
+    <p><strong>Bot:</strong> Hello! Type "offers", "food", or "timings" to get started.</p>
+  </div>
+  <div class="chat-input">
+    <input type="text" id="userInput" placeholder="Type your message..." />
+    <button onclick="sendMessage()">Send</button>
+  </div>
+</div>
 
 </body>
 </html>
-    
