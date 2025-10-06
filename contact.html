@@ -3,13 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact - Super Shopping Mall</title>
+  <title>Offers - Super Shopping Mall</title>
   <link rel="stylesheet" href="style.css" />
-  <script src="mall-chat.js" defer></script>
 </head>
 <body>
 
-  <!-- Header -->
   <header>
     <h1>Super Shopping Mall 💙</h1>
     <nav>
@@ -22,31 +20,17 @@
     </nav>
   </header>
 
-  <!-- Contact Section -->
-  <section class="contact-section">
-    <h2>Contact Us 📞</h2>
-    <form id="contactForm" onsubmit="return submitContact()">
-      <input type="text" id="name" placeholder="Your Name" required />
-      <input type="email" id="email" placeholder="Your Email" required />
-      <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-    <div id="contactResult" class="result-box"></div>
+  <section class="about-section">
+    <h2>Current Offers 🛒</h2>
+    <ul>
+      <li>Electronics: 50% off on selected items</li>
+      <li>Fashion: Buy 1 Get 1 Free on T-shirts and Jeans</li>
+      <li>Food Court: Free dessert on orders above ₹500</li>
+      <li>Home Appliances: Flat 30% off on select brands</li>
+      <li>Entertainment: Movie tickets at half price on weekends</li>
+    </ul>
   </section>
 
-  <script>
-    function submitContact() {
-      const name = document.getElementById("name").value;
-      const email = document.getElementById("email").value;
-      const message = document.getElementById("message").value;
-      const resultDiv = document.getElementById("contactResult");
-      if(name && email && message){
-        resultDiv.textContent = `Thank you ${name}, your message has been received! 💙`;
-        document.getElementById("contactForm").reset();
-      }
-      return false; // prevent actual form submission
-    }
-  </script>
-
 </body>
-</html>
+</html>    
+      
